@@ -8,6 +8,7 @@ The project contain three components
 * card: which is involve the use of props
 
 ## Counter
+```javascript
 import React, {useState} from 'react'
 
 function Counter(){
@@ -27,9 +28,9 @@ return(
 </div>);
 
 export default Counter
-
+```
 ## Card
-
+```javascript
 function  Card(props){
   const cardStyle = {
     backgroundColor: props.backgroundColor || '#f0f0f0', // Default color if not provided
@@ -52,8 +53,9 @@ function  Card(props){
 }
 
 export default Card;
-
+```
 ## App
+```javascript
 import Counter from './components/Counter'
 import Card from './components/Card'
 function App() {
@@ -64,7 +66,7 @@ function App() {
  <Card name="Biniyam" email="biniyamberihun326@gmail.com" age={20} backgroundColor="yellow" />
   <Card name="Betsinat" email="betsnatgezachew326@gmail.com" age={20}  backgroundColor="red" />
   </>
-
+```
   );
 
 }
