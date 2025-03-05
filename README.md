@@ -1,8 +1,78 @@
-# React + Vite
+# GDG Task: State and Props
+I learnt the use of state and props in this topic 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## project Over view
+The project contain three components
+* App: which used to render other projects.
+* counter: which show the use of state
+* card: which is involve the use of props
 
-Currently, two official plugins are available:
+## Counter
+import React, {useState} from 'react'
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+function Counter(){
+
+const [number, setnumber]= useState(0);
+const increase =()=>{setnumber(number+1);
+}
+const decrease =()=>{ if(number>0){setnumber(number-1)}}
+const reset = ()=>{setnumber(0)}
+
+return(
+   <div className='container'>
+   <p>Counter: {number}</p>
+<button onClick={increase}>Increament</button>
+<button onClick={reset}>Reset</button>
+<button onClick={decrease}>Decreament</button>
+</div>);
+
+export default Counter
+
+## Card
+
+function  Card(props){
+  const cardStyle = {
+    backgroundColor: props.backgroundColor || '#f0f0f0', // Default color if not provided
+    padding: '20px',
+     border: '1px solid #ccc',
+    borderRadius: '5px',
+    maxWidth: '300px',
+     margin: '10px',
+     boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.1)',
+  };
+
+    return(
+<div className="card" style={cardStyle}>
+  <h1></h1> 
+  <p>Name: {props.name}</p>
+  <p>Email: {props.email}</p>
+  <p>Age: {props.age}</p>
+</div>
+    );
+}
+
+export default Card;
+
+## App
+import Counter from './components/Counter'
+import Card from './components/Card'
+function App() {
+  return (
+    <>
+ <Counter/>
+ <Card name="Eyosiyas" email="eyosiyasgezahegn326@gmail.com" age={21} backgroundColor="green" />
+ <Card name="Biniyam" email="biniyamberihun326@gmail.com" age={20} backgroundColor="yellow" />
+  <Card name="Betsinat" email="betsnatgezachew326@gmail.com" age={20}  backgroundColor="red" />
+  </>
+
+  );
+
+}
+
+export default App
+
+
+
+
+
+
