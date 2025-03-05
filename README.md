@@ -66,13 +66,13 @@ function App() {
  <Card name="Biniyam" email="biniyamberihun326@gmail.com" age={20} backgroundColor="yellow" />
   <Card name="Betsinat" email="betsnatgezachew326@gmail.com" age={20}  backgroundColor="red" />
   </>
-```
+
   );
 
 }
 
 export default App
-
+```
 
 
 
