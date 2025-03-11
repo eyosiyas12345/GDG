@@ -3,7 +3,7 @@
 This is a task management app that holds title, description, due date and completion status which allow the user to create, update the task
 the code contain the TaskManagementApp, App or the main one mainly 
 
-```javascript```
+```javascript
 import React, { useState } from 'react';
 import '../App.css'; // Create this CSS file
 
@@ -109,3 +109,4 @@ function TaskManagementApp() {
 }
 
 export default TaskManagementApp;
+```
