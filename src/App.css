@@ -1,0 +1,55 @@
+.task-management-app {
+  font-family: sans-serif;
+  padding: 20px;
+}
+h1{
+  color: rgb(209, 203, 203);
+  background-color:rgb(0, 153, 255);
+  border-radius:10px;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form button {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.task-form button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-item.completed {
+  background-color: #f0f8ff;
+  text-decoration: line-through;
+}
+
+.task-item button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
