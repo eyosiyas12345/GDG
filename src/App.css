@@ -1,55 +1,42 @@
-.task-management-app {
-  font-family: sans-serif;
-  padding: 20px;
-}
-h1{
-  color: rgb(209, 203, 203);
-  background-color:rgb(0, 153, 255);
-  border-radius:10px;
-}
 
-.task-form {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
+body{
+  background-color: #333;
+  color:white;
+  text-align: center;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  font-family:Arial;
+  }
+  h1{
+    font-size:48px;
+    font-weight: 700;
+  }
+  .appContainer{
+    height:300px;
+    width:400px;
+    border:rgba(70, 180, 180, 0.863) 4px solid;
+    border-radius:10px;
+  }
+  .loggedout h1{
+    background-color: red;
+    border:5px;
+  }
+  .loggedin h1{
+    background-color: green
+  }
+  #app-container{
+    background-color: rgb(133, 133, 185);
+    border:4px white solid;
+    border-radius: 15px;
+    height: 300px;
+    width: 400px;
+    position: relative;
+  }
+button{
+  position: absolute;
+  bottom: 0;
+  right: 0;
 
-.task-form input,
-.task-form textarea,
-.task-form button {
-  margin-bottom: 10px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.task-form button {
-  background-color: #007bff;
-  color: white;
-  cursor: pointer;
-}
-
-.task-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.task-item {
-  border: 1px solid #ddd;
-  padding: 15px;
-  margin-bottom: 10px;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-}
-
-.task-item.completed {
-  background-color: #f0f8ff;
-  text-decoration: line-through;
-}
-
-.task-item button {
-  margin-top: 5px;
-  padding: 5px 10px;
-  cursor: pointer;
 }
