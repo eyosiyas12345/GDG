@@ -1,14 +1,13 @@
 
-import './App.css'
-import { UserProvider } from "./UserContext";
-import UserSwitch from "./UserSwitch";
+import './App.css';
+import CharacterCount from './CharacterCount';
 
-function App(){
-  return(
-    <UserProvider>
-      <UserSwitch/>
-    </UserProvider>
-  )
+function App() {
+  return (
+    <div className="app-container">
+      <CharacterCount />
+    </div>
+  );
 }
 
 export default App;
