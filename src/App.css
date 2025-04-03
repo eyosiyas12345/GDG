@@ -1,50 +1,42 @@
-.app-container {
-  display: flex;
-  flex-direction: column;
+
+body{
+  background-color: #333;
+  color:white;
+  text-align: center;
+  height:100vh;
+  display:flex;
+  justify-content:center;
   align-items: center;
-  padding: 20px;
-  font-family: sans-serif;
-  background-color: #f0f0f0;
-  border-radius: 8px;
-  width: 500px;
-  margin: 50px auto;
-}
+  font-family:Arial;
+  }
+  h1{
+    font-size:48px;
+    font-weight: 700;
+  }
+  .appContainer{
+    height:300px;
+    width:400px;
+    border:rgba(70, 180, 180, 0.863) 4px solid;
+    border-radius:10px;
+  }
+  .loggedout h1{
+    background-color: red;
+    border:5px;
+  }
+  .loggedin h1{
+    background-color: green
+  }
+  #app-container{
+    background-color: rgb(133, 133, 185);
+    border:4px white solid;
+    border-radius: 15px;
+    height: 300px;
+    width: 400px;
+    position: relative;
+  }
+button{
+  position: absolute;
+  bottom: 0;
+  right: 0;
 
-.text-area {
-  width: 100%;
-  min-height: 150px;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  resize: vertical; /* Allow vertical resizing */
-}
-
-.counter-container {
-  margin-bottom: 10px;
-}
-
-.warning {
-  color: red;
-  font-weight: bold;
-}
-
-.warning-message {
-  color: orange;
-  font-weight: bold;
-}
-
-.copy-button {
-  padding: 10px 15px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.copy-button:hover {
-  background-color: #367c39;
 }
